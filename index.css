@@ -107,7 +107,28 @@ color: #46d8a0;
 .gallery img:hover {
   transform: scale(1.1);
 }
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
 
+p {
+  color: #333;
+  font-size: 18px;
+}
+.baby-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+.container img{
+  margin: auto;
+  text-align: center;
+  width: 200px;
+  height: 220px;
+}
 
 @media only screen and (max-width:700px) {
   body{
