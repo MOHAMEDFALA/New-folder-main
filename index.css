@@ -100,6 +100,14 @@ color: #46d8a0;
     overflow: hidden;
  
 }
+
+.video1{
+  text-align: center;
+ 
+  display: block;
+ 
+ }
+ 
 .header{
   padding: 0;
   margin-left: 0;
