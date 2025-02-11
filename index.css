@@ -196,6 +196,8 @@ p {
   color: rgb(0, 0, 0);
   position: relative;
   top: -45px;
+  border: black solid 3px;
+  padding: 4px;
   left: 150px;
  display: block;
  width: fit-content ;
