@@ -8,6 +8,11 @@
 	<title> ARFAN  🥰</title>
 </head>
 <body>
+
+
+	
+
+
 <div class="header">
 	<div class="headername">
 <span class="a">A</span><span class="r">R</span><span class="f">F</span><span class="aa">A</span><span class="n">N</span>
@@ -25,9 +30,16 @@
 </div>
 
 <div class="container">
-	<h1 style="color: wheat;">Welcome to Arfan World</h1>
+	<h1 style="color: aliceblue;" id="msg">  </h1>
 	<img src="image/arfan1.jpg" alt="Cute Baby" class="baby-image">
 	<p style="color: wheat;" >Meet the cutest Arfan baby in the world! Full of joy, laughter, and love.</p>
 </div>
+<script>
+	let name = prompt("Enter your name ?");
+	let msg = document.getElementById("msg");
+
+msg.innerHTML = "welcome to our web site "  + name
+	</script>
+
 </body>
 </html>  
