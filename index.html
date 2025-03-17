@@ -19,8 +19,8 @@
 </div>
 <div class="hedertitle">
 	<h1>ARFAN CHELLAM 🥰</h1></div>
-
 </div>
+
 <div class="nav">
 	<ul>
 		<li style="border: 2px solid white;"><a href="index.html">HOME</a></li>
@@ -28,17 +28,36 @@
 		<li><a href="about.html">Video</a></li>
 	</ul>
 </div>
-
+<br>
+<center>
+<input type="text" name="name" id="nameinp" placeholder="Enter your Name Here" >
+<button onclick="myFunction()">Submit</button>
+</center>
 <div class="container">
 	<h1 style="color: aliceblue;" id="msg">  </h1>
 	<img src="image/arfan1.jpg" alt="Cute Baby" class="baby-image">
-	<p style="color: wheat;" >Meet the cutest Arfan baby in the world! Full of joy, laughter, and love.</p>
+	<p style="color: wheat; background-color:black; " >Meet the cutest Arfan baby in the world! Full of joy, laughter, and love.</p>
 </div>
 <script>
-	let name = prompt("Enter your name ?");
+
+let colors = ["red", "blue", "green", "yellow", "orange", "purple", "pink", "brown", "black", "white", "gray", "cyan", "magenta", "gold", "silver", "lime", "olive", "maroon", "navy", "teal", "aqua", "fuchsia", "salmon", "plum", "indigo", "ivory", "khaki", "lavender", "linen", "moccasin", "peru", "sienna", "tan", "thistle", "tomato", "wheat", "azure", "beige", "bisque", "coral", "crimson", "cyan", "darkblue", "darkcyan", "darkgoldenrod", "darkgray", "darkgreen", "darkkhaki", "darkmagenta", "darkolivegreen", "darkorange", "darkorchid", "darkred", "darksalmon", "darkseagreen", "darkslateblue", "darkslategray", "darkturquoise", "darkviolet", "deeppink", "deepskyblue", "dimgray", "dodgerblue", "firebrick", "floralwhite", "forestgreen", "gainsboro", "ghostwhite", "gold", "goldenrod", "greenyellow", "honeydew", "hotpink", "indianred", "khaki", "lavender", "lavenderblush", "lawngreen", "lemonchiffon", "lightblue", "lightcoral", "lightcyan", "lightgoldenrodyellow", "lightgray", "lightgreen", "lightpink", "lightsalmon", "lightseagreen", "lightskyblue", "lightslategray", "lightsteelblue", "lightyellow", "lime", "limegreen", "linen", "magenta", "maroon", "mediumaquamarine", "mediumblue", "mediumorchid", "mediumpurple", "mediumseagreen", "mediumslateblue", "mediumspringgreen", "mediumturquoise", "mediumvioletred", "midnightblue", "mintcream", "mistyrose", "moccasin", "navajowhite", "navy", "oldlace", "olive", "olived"]
+
+let color = colors[Math.floor(Math.random()*colors.length)]
+
+document.body.style.backgroundColor = color
+
+
 	let msg = document.getElementById("msg");
 
-msg.innerHTML = "welcome to our web site "  + name
+function myFunction(){
+	let name = document.getElementById("nameinp").value
+	msg.innerHTML = "welcome to our web site "  + name
+
+}
+
+
+
+
 	</script>
 
 </body>
